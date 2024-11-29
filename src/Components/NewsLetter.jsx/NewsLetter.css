@@ -1,49 +1,96 @@
 .newsletter {
-    width: 65%;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
-    gap: 30px;
+  width: 65%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  gap: 30px;
+}
+
+.newsletter h1 {
+  color: #454545;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.newsletter p {
+  color: #454545;
+  font-size: 20px;
+}
+
+.newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 730px;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+}
+
+.newsletter input {
+  width: 500px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+.newsletter div button {
+  width: 210px;
+  height: 70px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media Query for Android Screens */
+@media only screen and (max-width: 768px) {
+  .newsletter {
+    width: 90%; /* Increase width to take up more screen space */
+    height: auto; /* Allow height to adjust to content */
+    padding: 20px; /* Reduce padding */
+    margin-bottom: 100px; /* Reduce margin-bottom */
+    gap: 20px; /* Reduce gap between elements */
   }
+
   .newsletter h1 {
-    color: #454545;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 30px; /* Reduce heading size */
+    text-align: center; /* Center the heading */
   }
+
   .newsletter p {
-    color: #454545;
-    font-size: 20px;
+    font-size: 16px; /* Reduce paragraph size */
+    text-align: center; /* Center the paragraph */
   }
+
   .newsletter div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    width: 730px;
-    height: 70px;
-    border-radius: 80px;
-    border: 1px solid #e3e3e3;
+    flex-direction: column; /* Stack input and button vertically */
+    width: 100%; /* Make the input container take full width */
+    height: auto; /* Allow height to adjust to content */
+    border-radius: 20px; /* Reduce border-radius */
   }
+
   .newsletter input {
-    width: 500px;
-    margin-left: 30px;
-    border: none;
-    outline: none;
-    color: #616161;
-    font-family: Poppins;
-    font-size: 16px;
+    width: calc(100% - 40px); /* Adjust input width */
+    margin: 10px; /* Add margin around the input */
+    height: 40px; /* Adjust input height */
+    border-radius: 10px; /* Reduce border-radius */
   }
+
   .newsletter div button {
-    width: 210px;
-    height: 70px;
-    border-radius: 80px;
-    background: black;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+    width: calc(100% - 40px); /* Adjust button width */
+    height: 50px; /* Adjust button height */
+    margin: 10px; /* Add margin around the button */
+    border-radius: 10px; /* Reduce border-radius */
   }
+}

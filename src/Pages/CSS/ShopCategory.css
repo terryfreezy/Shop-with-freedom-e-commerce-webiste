@@ -1,37 +1,61 @@
-.shopcategory-banner{
-    display: block;
-    margin: 30px auto;
-    width: 82%;
+.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
 }
-.shopcategory-indexSort{
-    display: flex;
-    margin: 0px 170px;
-    justify-content: space-between;
-    align-items: center;
+.shopcategory-indexSort {
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
 }
-.shopcategory-sort{
-    padding: 10px 20px;
-    border-radius: 40px;
-    border: 1px solid #888;
+.shopcategory-sort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
 }
-.shopcategory-indexSort p span{
-font-weight: 600;
+.shopcategory-indexSort p span {
+  font-weight: 600;
 }
-.shopcategory-products{
-    margin: 20px 170px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 90px;
+.shopcategory-products {
+  margin: 20px 170px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 90px;
 }
-.shopcategory-loadmore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px auto;
-    width: 233px;
-    height: 69px;
-    border-radius: 75px;
-    background: #ededed;
-    color: #787878;
-    font-weight: 500;
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-weight: 500;
+}
+
+/* Media Query for Android Screens */
+@media only screen and (max-width: 768px) {
+  .shopcategory-banner {
+    width: 95%; /* Increase width to take up more screen space */
+  }
+
+  .shopcategory-indexSort {
+    margin: 0px 20px; /* Reduce margin */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Add gap between elements */
+  }
+
+  .shopcategory-products {
+    margin: 20px; /* Reduce margin */
+    grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+    row-gap: 40px; /* Reduce row gap */
+  }
+
+  .shopcategory-loadmore {
+    margin: 50px auto; /* Reduce margin */
+  }
 }
